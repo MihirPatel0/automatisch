@@ -2,7 +2,6 @@
 # Make sure to include the base setup for lerna here.
 FROM node:16 as base
 WORKDIR /app
-RUN apk update && apk add yarn
 COPY ./package.json ./
 RUN yarn install
 COPY ./lerna.json ./
