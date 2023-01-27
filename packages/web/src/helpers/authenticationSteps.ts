@@ -1,4 +1,4 @@
-import type { IAuthenticationStep, IJSONObject } from '@automatisch/types';
+import type { IAuthenticationStep, IJSONObject } from '@automatischtest1/types';
 import apolloClient from 'graphql/client';
 import MUTATIONS from 'graphql/mutations';
 

@@ -1,4 +1,4 @@
-import { IGlobalVariable, IJSONObject } from '@automatisch/types';
+import { IGlobalVariable, IJSONObject } from '@automatischtest1/types';
 import qs from 'qs';
 import { omitBy, isEmpty } from 'lodash';
 

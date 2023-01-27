@@ -1,4 +1,4 @@
-import { IGlobalVariable, IJSONObject } from '@automatisch/types';
+import { IGlobalVariable, IJSONObject } from '@automatischtest1/types';
 
 export default {
   name: 'List forms',
@@ -18,7 +18,10 @@ export default {
     };
 
     do {
-      const { data } = await $.http.get(`https://www.googleapis.com/drive/v3/files`, { params });
+      const { data } = await $.http.get(
+        `https://www.googleapis.com/drive/v3/files`,
+        { params }
+      );
       params.pageToken = data.nextPageToken;
 
       for (const file of data.files) {

@@ -1,4 +1,4 @@
-import { IGlobalVariable } from '@automatisch/types';
+import { IGlobalVariable } from '@automatischtest1/types';
 
 const verifyCredentials = async ($: IGlobalVariable) => {
   await $.http.get('/2010-04-01/Accounts.json?PageSize=1');

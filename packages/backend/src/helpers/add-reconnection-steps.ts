@@ -2,7 +2,7 @@ import {
   IApp,
   IAuthenticationStep,
   IAuthenticationStepField,
-} from '@automatisch/types';
+} from '@automatischtest1/types';
 import cloneDeep from 'lodash/cloneDeep';
 
 const connectionIdArgument = {

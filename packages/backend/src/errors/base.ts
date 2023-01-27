@@ -1,4 +1,4 @@
-import { IJSONObject } from '@automatisch/types';
+import { IJSONObject } from '@automatischtest1/types';
 
 export default class BaseError extends Error {
   details = {};

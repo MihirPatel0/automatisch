@@ -1,5 +1,5 @@
 import { URLSearchParams } from 'node:url';
-import { IGlobalVariable } from '@automatisch/types';
+import { IGlobalVariable } from '@automatischtest1/types';
 import authScope from '../common/auth-scope';
 
 const refreshToken = async ($: IGlobalVariable) => {

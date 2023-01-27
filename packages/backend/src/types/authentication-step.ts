@@ -1,4 +1,4 @@
-import type { IAuthenticationStepField } from '@automatisch/types';
+import type { IAuthenticationStepField } from '@automatischtest1/types';
 
 type AuthenticationStep = {
   step: number;

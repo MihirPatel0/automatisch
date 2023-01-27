@@ -13,7 +13,7 @@ import {
 } from './helpers/create-bull-board-handler';
 import injectBullBoardHandler from './helpers/inject-bull-board-handler';
 import router from './routes';
-import { IRequest } from '@automatisch/types';
+import { IRequest } from '@automatischtest1/types';
 
 createBullBoardHandler(serverAdapter);
 
@@ -31,12 +31,14 @@ app.use(
     },
   })
 );
-app.use(express.urlencoded({
-  extended: false,
-  verify(req, res, buf) {
-    (req as IRequest).rawBody = buf;
-  },
-}));
+app.use(
+  express.urlencoded({
+    extended: false,
+    verify(req, res, buf) {
+      (req as IRequest).rawBody = buf;
+    },
+  })
+);
 app.use(cors(corsOptions));
 app.use('/', router);
 

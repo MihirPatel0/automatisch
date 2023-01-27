@@ -8,7 +8,7 @@ import Stack from '@mui/material/Stack';
 import { EditorContext } from 'contexts/Editor';
 import FlowSubstepTitle from 'components/FlowSubstepTitle';
 import InputCreator from 'components/InputCreator';
-import type { IField, IStep, ISubstep } from '@automatisch/types';
+import type { IField, IStep, ISubstep } from '@automatischtest1/types';
 
 type FlowSubstepProps = {
   substep: ISubstep;

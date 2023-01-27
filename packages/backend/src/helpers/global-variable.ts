@@ -11,7 +11,7 @@ import {
   ITriggerItem,
   IActionItem,
   IRequest,
-} from '@automatisch/types';
+} from '@automatischtest1/types';
 import EarlyExitError from '../errors/early-exit';
 
 type GlobalVariableOptions = {

@@ -1,4 +1,4 @@
-import { IRawTrigger } from '@automatisch/types';
+import { IRawTrigger } from '@automatischtest1/types';
 
 export default function defineTrigger(
   triggerDefinition: IRawTrigger

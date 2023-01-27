@@ -1,5 +1,5 @@
 import crypto from 'crypto';
-import { IGlobalVariable } from '@automatisch/types';
+import { IGlobalVariable } from '@automatischtest1/types';
 import appConfig from '../../../config/app';
 
 const verifyWebhook = async ($: IGlobalVariable) => {

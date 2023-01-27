@@ -1,4 +1,4 @@
-import { IGlobalVariable } from '@automatisch/types';
+import { IGlobalVariable } from '@automatischtest1/types';
 import { URLSearchParams } from 'url';
 
 export default async function generateAuthUrl($: IGlobalVariable) {
@@ -8,8 +8,7 @@ export default async function generateAuthUrl($: IGlobalVariable) {
     scope: scopes.join(','),
   });
 
-  const url = `${$.app.baseUrl
-    }/oauth/authorize?${searchParams.toString()}`;
+  const url = `${$.app.baseUrl}/oauth/authorize?${searchParams.toString()}`;
 
   await $.auth.set({
     url,

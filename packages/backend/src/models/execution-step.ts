@@ -3,7 +3,7 @@ import Base from './base';
 import Execution from './execution';
 import Step from './step';
 import Telemetry from '../helpers/telemetry';
-import { IJSONObject } from '@automatisch/types';
+import { IJSONObject } from '@automatischtest1/types';
 
 class ExecutionStep extends Base {
   id!: string;

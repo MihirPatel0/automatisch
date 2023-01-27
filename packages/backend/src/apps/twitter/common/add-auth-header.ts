@@ -1,6 +1,6 @@
 import { Token } from 'oauth-1.0a';
 import { URLSearchParams } from 'node:url';
-import { IJSONObject, TBeforeRequest } from '@automatisch/types';
+import { IJSONObject, TBeforeRequest } from '@automatischtest1/types';
 import oauthClient from './oauth-client';
 
 type RequestDataType = {

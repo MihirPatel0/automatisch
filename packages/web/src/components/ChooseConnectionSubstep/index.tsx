@@ -6,7 +6,12 @@ import Collapse from '@mui/material/Collapse';
 import ListItem from '@mui/material/ListItem';
 import Autocomplete from '@mui/material/Autocomplete';
 
-import type { IApp, IConnection, IStep, ISubstep } from '@automatisch/types';
+import type {
+  IApp,
+  IConnection,
+  IStep,
+  ISubstep,
+} from '@automatischtest1/types';
 import useFormatMessage from 'hooks/useFormatMessage';
 import { EditorContext } from 'contexts/Editor';
 import FlowSubstepTitle from 'components/FlowSubstepTitle';

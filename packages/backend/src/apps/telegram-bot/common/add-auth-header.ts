@@ -1,10 +1,13 @@
-import { TBeforeRequest } from '@automatisch/types';
+import { TBeforeRequest } from '@automatischtest1/types';
 import { URL } from 'node:url';
 
 const addAuthHeader: TBeforeRequest = ($, requestConfig) => {
   if ($.auth.data?.token) {
     const token = $.auth.data.token as string;
-    requestConfig.baseURL = (new URL(`/bot${token}`, requestConfig.baseURL)).toString();
+    requestConfig.baseURL = new URL(
+      `/bot${token}`,
+      requestConfig.baseURL
+    ).toString();
   }
 
   return requestConfig;

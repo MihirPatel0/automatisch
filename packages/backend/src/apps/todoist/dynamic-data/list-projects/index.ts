@@ -1,4 +1,4 @@
-import { IGlobalVariable } from '@automatisch/types';
+import { IGlobalVariable } from '@automatischtest1/types';
 
 export default {
   name: 'List projects',
@@ -7,12 +7,14 @@ export default {
   async run($: IGlobalVariable) {
     const response = await $.http.get('/projects');
 
-    response.data = response.data.map((project: { id: string, name: string }) => {
-      return {
-        value: project.id,
-        name: project.name,
-      };
-    });
+    response.data = response.data.map(
+      (project: { id: string; name: string }) => {
+        return {
+          value: project.id,
+          name: project.name,
+        };
+      }
+    );
 
     return response;
   },

@@ -1,4 +1,4 @@
-import { IGlobalVariable } from '@automatisch/types';
+import { IGlobalVariable } from '@automatischtest1/types';
 import getRepoOwnerAndRepo from '../../common/get-repo-owner-and-repo';
 import parseLinkHeader from '../../../../helpers/parse-header-link';
 

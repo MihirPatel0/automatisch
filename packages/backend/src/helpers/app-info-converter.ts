@@ -1,4 +1,4 @@
-import type { IApp } from '@automatisch/types';
+import type { IApp } from '@automatischtest1/types';
 import appConfig from '../config/app';
 
 const appInfoConverter = (rawAppData: IApp) => {

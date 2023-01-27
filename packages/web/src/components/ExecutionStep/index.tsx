@@ -7,7 +7,7 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import type { IApp, IExecutionStep, IStep } from '@automatisch/types';
+import type { IApp, IExecutionStep, IStep } from '@automatischtest1/types';
 
 import TabPanel from 'components/TabPanel';
 import JSONViewer from 'components/JSONViewer';

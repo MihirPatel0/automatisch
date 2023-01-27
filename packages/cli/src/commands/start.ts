@@ -42,7 +42,7 @@ export default class Start extends Command {
   }
 
   async createDatabaseAndUser(): Promise<void> {
-    const utils = await import('@automatisch/backend/database-utils');
+    const utils = await import('@automatischtest1/backend/database-utils');
 
     await utils.createDatabaseAndUser(
       process.env.POSTGRES_DATABASE,
@@ -51,8 +51,8 @@ export default class Start extends Command {
   }
 
   async runMigrationsIfNeeded(): Promise<void> {
-    const { logger } = await import('@automatisch/backend/logger');
-    const database = await import('@automatisch/backend/database');
+    const { logger } = await import('@automatischtest1/backend/logger');
+    const database = await import('@automatischtest1/backend/database');
     const migrator = database.client.migrate;
 
     const [, pendingMigrations] = await migrator.list();
@@ -70,13 +70,13 @@ export default class Start extends Command {
   }
 
   async seedUser(): Promise<void> {
-    const utils = await import('@automatisch/backend/database-utils');
+    const utils = await import('@automatischtest1/backend/database-utils');
 
     await utils.createUser();
   }
 
   async runApp(): Promise<void> {
-    await import('@automatisch/backend/server');
+    await import('@automatischtest1/backend/server');
   }
 
   async run(): Promise<void> {

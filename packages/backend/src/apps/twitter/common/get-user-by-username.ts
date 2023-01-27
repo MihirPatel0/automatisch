@@ -1,4 +1,4 @@
-import { IGlobalVariable, IJSONObject } from '@automatisch/types';
+import { IGlobalVariable, IJSONObject } from '@automatischtest1/types';
 
 const getUserByUsername = async ($: IGlobalVariable, username: string) => {
   const response = await $.http.get(`/2/users/by/username/${username}`);

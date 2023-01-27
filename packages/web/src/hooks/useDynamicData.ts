@@ -8,7 +8,7 @@ import type {
   IField,
   IFieldDropdownSource,
   IJSONObject,
-} from '@automatisch/types';
+} from '@automatischtest1/types';
 
 import { GET_DYNAMIC_DATA } from 'graphql/queries/get-dynamic-data';
 

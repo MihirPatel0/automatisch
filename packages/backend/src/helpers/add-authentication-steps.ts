@@ -1,4 +1,4 @@
-import { IApp } from '@automatisch/types';
+import { IApp } from '@automatischtest1/types';
 
 function addAuthenticationSteps(app: IApp): IApp {
   if (app.auth.generateAuthUrl) {

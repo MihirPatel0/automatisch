@@ -1,6 +1,6 @@
 import axios, { AxiosRequestConfig } from 'axios';
 export { AxiosInstance as IHttpClient } from 'axios';
-import { IHttpClientParams } from '@automatisch/types';
+import { IHttpClientParams } from '@automatischtest1/types';
 import { URL } from 'url';
 import HttpError from '../../errors/http';
 

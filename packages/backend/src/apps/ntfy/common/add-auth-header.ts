@@ -1,4 +1,4 @@
-import { TBeforeRequest } from '@automatisch/types';
+import { TBeforeRequest } from '@automatischtest1/types';
 
 const addAuthHeader: TBeforeRequest = ($, requestConfig) => {
   if ($.auth.data.apiBaseUrl) {
@@ -9,7 +9,7 @@ const addAuthHeader: TBeforeRequest = ($, requestConfig) => {
     requestConfig.auth = {
       username: $.auth.data.username as string,
       password: $.auth.data.password as string,
-    }
+    };
   }
 
   return requestConfig;

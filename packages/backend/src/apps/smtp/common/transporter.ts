@@ -1,4 +1,4 @@
-import { IGlobalVariable } from '@automatisch/types';
+import { IGlobalVariable } from '@automatischtest1/types';
 import nodemailer, { TransportOptions } from 'nodemailer';
 
 const transporter = ($: IGlobalVariable) => {

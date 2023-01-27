@@ -1,4 +1,4 @@
-import { IGlobalVariable, IJSONObject } from '@automatisch/types';
+import { IGlobalVariable, IJSONObject } from '@automatischtest1/types';
 import type { AxiosResponse } from 'axios';
 import parseLinkHeader from '../../../helpers/parse-header-link';
 

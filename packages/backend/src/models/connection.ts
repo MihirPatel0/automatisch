@@ -5,7 +5,7 @@ import Base from './base';
 import User from './user';
 import Step from './step';
 import appConfig from '../config/app';
-import { IJSONObject } from '@automatisch/types';
+import { IJSONObject } from '@automatischtest1/types';
 import Telemetry from '../helpers/telemetry';
 
 class Connection extends Base {

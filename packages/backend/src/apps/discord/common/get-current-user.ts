@@ -1,4 +1,4 @@
-import { IGlobalVariable, IJSONObject } from '@automatisch/types';
+import { IGlobalVariable, IJSONObject } from '@automatischtest1/types';
 
 const getCurrentUser = async ($: IGlobalVariable): Promise<IJSONObject> => {
   const response = await $.http.get('/users/@me');

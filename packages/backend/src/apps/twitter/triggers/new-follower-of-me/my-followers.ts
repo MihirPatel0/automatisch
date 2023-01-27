@@ -1,4 +1,4 @@
-import { IGlobalVariable } from '@automatisch/types';
+import { IGlobalVariable } from '@automatischtest1/types';
 import getCurrentUser from '../../common/get-current-user';
 import getUserByUsername from '../../common/get-user-by-username';
 import getUserFollowers from '../../common/get-user-followers';

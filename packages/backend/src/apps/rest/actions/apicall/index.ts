@@ -1,4 +1,4 @@
-import { IJSONObject } from '@automatisch/types';
+import { IJSONObject } from '@automatischtest1/types';
 import { AxiosRequestConfig } from 'axios';
 import logger from '../../../../helpers/logger';
 import defineAction from '../../../../helpers/define-action';
@@ -53,7 +53,10 @@ export default defineAction({
         };
       }
     } catch (e) {
-      info = { error: e.message ?? 'Something went wrong please check log for more info.' };
+      info = {
+        error:
+          e.message ?? 'Something went wrong please check log for more info.',
+      };
       logger.error(
         'EXECUTION ERROR REST FOR: ' +
           JSON.stringify({

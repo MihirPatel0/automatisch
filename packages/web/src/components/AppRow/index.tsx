@@ -8,7 +8,7 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import useFormatMessage from 'hooks/useFormatMessage';
 import AppIcon from 'components/AppIcon';
 import * as URLS from 'config/urls';
-import type { IApp } from '@automatisch/types';
+import type { IApp } from '@automatischtest1/types';
 
 import { CardContent, Typography } from './style';
 

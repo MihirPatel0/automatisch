@@ -1,4 +1,4 @@
-import { IGlobalVariable, IJSONObject } from '@automatisch/types';
+import { IGlobalVariable, IJSONObject } from '@automatischtest1/types';
 import { URLSearchParams } from 'url';
 import { omitBy, isEmpty } from 'lodash';
 

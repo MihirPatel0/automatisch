@@ -1,5 +1,5 @@
 import App from '../../models/app';
-import { IApp } from '@automatisch/types';
+import { IApp } from '@automatischtest1/types';
 
 type Params = {
   name: string;

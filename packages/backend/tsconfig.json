@@ -16,7 +16,7 @@
     "target": "es2021",
     "typeRoots": [
       "node_modules/@types",
-      "node_modules/@automatisch/types",
+      "node_modules/@automatischtest1/types",
       "./src/types",
       "./src/apps"
     ]

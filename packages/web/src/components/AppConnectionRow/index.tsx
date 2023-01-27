@@ -11,7 +11,7 @@ import ErrorIcon from '@mui/icons-material/Error';
 import { useSnackbar } from 'notistack';
 import { DateTime } from 'luxon';
 
-import type { IConnection } from '@automatisch/types';
+import type { IConnection } from '@automatischtest1/types';
 import { DELETE_CONNECTION } from 'graphql/mutations/delete-connection';
 import { TEST_CONNECTION } from 'graphql/queries/test-connection';
 import ConnectionContextMenu from 'components/AppConnectionContextMenu';

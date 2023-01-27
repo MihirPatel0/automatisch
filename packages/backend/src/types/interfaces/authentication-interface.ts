@@ -1,4 +1,4 @@
-import type { IApp, IJSONObject } from '@automatisch/types';
+import type { IApp, IJSONObject } from '@automatischtest1/types';
 
 export default interface AuthenticationInterface {
   appData: IApp;

@@ -1,5 +1,8 @@
 import template from 'lodash/template';
-import type { IAuthenticationStepField, IJSONObject } from '@automatisch/types';
+import type {
+  IAuthenticationStepField,
+  IJSONObject,
+} from '@automatischtest1/types';
 
 const interpolate = /{([\s\S]+?)}/g;
 

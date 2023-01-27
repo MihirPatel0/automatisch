@@ -1,5 +1,5 @@
 import { DateTime } from 'luxon';
-import { IGlobalVariable, IJSONObject } from '@automatisch/types';
+import { IGlobalVariable, IJSONObject } from '@automatischtest1/types';
 import getRepoOwnerAndRepo from '../../common/get-repo-owner-and-repo';
 import parseLinkHeader from '../../../../helpers/parse-header-link';
 

@@ -1,6 +1,6 @@
 import { URL } from 'node:url';
 import { QueryContext, ModelOptions } from 'objection';
-import type { IJSONObject, IStep } from '@automatisch/types';
+import type { IJSONObject, IStep } from '@automatischtest1/types';
 import Base from './base';
 import App from './app';
 import Flow from './flow';

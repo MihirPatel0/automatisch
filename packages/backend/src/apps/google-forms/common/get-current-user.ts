@@ -1,4 +1,4 @@
-import { IGlobalVariable } from '@automatisch/types';
+import { IGlobalVariable } from '@automatischtest1/types';
 
 const getCurrentUser = async ($: IGlobalVariable) => {
   const { data: currentUser } = await $.http.get(

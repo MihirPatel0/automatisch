@@ -30,9 +30,9 @@
     tslib "^2.3.0"
     zen-observable-ts "^1.2.5"
 
-"@automatisch/types@^0.1.4":
+"@automatischtest1/types@^0.1.4":
   version "0.1.4"
-  resolved "https://registry.yarnpkg.com/@automatisch/types/-/types-0.1.4.tgz#30c813bbd68937ed2f4a74651a07284f2d925d62"
+  resolved "https://registry.yarnpkg.com/@automatischtest1/types/-/types-0.1.4.tgz#30c813bbd68937ed2f4a74651a07284f2d925d62"
   integrity sha512-vc1bjz2VTWvxQPtC4yHp7t+TA5lpZXKeVLTiT385wxIGsgPgE2kDrlWp5FCea8Adk4MRn90BEWD5cDzLd+7OtA==
 
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.10.4", "@babel/code-frame@^7.12.13":

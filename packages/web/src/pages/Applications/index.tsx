@@ -7,7 +7,7 @@ import Grid from '@mui/material/Grid';
 import Divider from '@mui/material/Divider';
 import CircularProgress from '@mui/material/CircularProgress';
 import AddIcon from '@mui/icons-material/Add';
-import type { IApp } from '@automatisch/types';
+import type { IApp } from '@automatischtest1/types';
 
 import NoResultFound from 'components/NoResultFound';
 import ConditionalIconButton from 'components/ConditionalIconButton';

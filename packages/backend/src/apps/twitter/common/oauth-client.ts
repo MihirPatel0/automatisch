@@ -1,4 +1,4 @@
-import { IGlobalVariable } from '@automatisch/types';
+import { IGlobalVariable } from '@automatischtest1/types';
 import crypto from 'crypto';
 import OAuth from 'oauth-1.0a';
 

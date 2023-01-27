@@ -19,7 +19,7 @@ import type {
   ISubstep,
   ITrigger,
   IAction,
-} from '@automatisch/types';
+} from '@automatischtest1/types';
 
 type ChooseAppAndEventSubstepProps = {
   substep: ISubstep;

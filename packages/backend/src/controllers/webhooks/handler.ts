@@ -1,12 +1,15 @@
 import { Response } from 'express';
 import bcrypt from 'bcrypt';
-import { IRequest, ITriggerItem } from '@automatisch/types';
+import { IRequest, ITriggerItem } from '@automatischtest1/types';
 
 import Flow from '../../models/flow';
 import { processTrigger } from '../../services/trigger';
 import actionQueue from '../../queues/action';
 import globalVariable from '../../helpers/global-variable';
-import { REMOVE_AFTER_30_DAYS_OR_150_JOBS, REMOVE_AFTER_7_DAYS_OR_50_JOBS } from '../../helpers/remove-job-configuration';
+import {
+  REMOVE_AFTER_30_DAYS_OR_150_JOBS,
+  REMOVE_AFTER_7_DAYS_OR_50_JOBS,
+} from '../../helpers/remove-job-configuration';
 
 export default async (request: IRequest, response: Response) => {
   const flow = await Flow.query()
@@ -53,7 +56,7 @@ export default async (request: IRequest, response: Response) => {
       headers: request.headers,
       body: request.body,
       query: request.query,
-    }
+    };
 
     rawInternalId = JSON.stringify(payload);
   }
@@ -69,7 +72,7 @@ export default async (request: IRequest, response: Response) => {
     flowId: flow.id,
     stepId: triggerStep.id,
     triggerItem,
-    testRun
+    testRun,
   });
 
   if (testRun) {
@@ -88,7 +91,7 @@ export default async (request: IRequest, response: Response) => {
   const jobOptions = {
     removeOnComplete: REMOVE_AFTER_7_DAYS_OR_50_JOBS,
     removeOnFail: REMOVE_AFTER_30_DAYS_OR_150_JOBS,
-  }
+  };
 
   await actionQueue.add(jobName, jobPayload, jobOptions);
 

@@ -1,4 +1,4 @@
-import { IJSONObject } from '@automatisch/types';
+import { IJSONObject } from '@automatischtest1/types';
 import defineAction from '../../../../helpers/define-action';
 import transporter from '../../common/transporter';
 

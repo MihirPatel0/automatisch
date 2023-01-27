@@ -1,4 +1,4 @@
-import type { IStep } from '@automatisch/types';
+import type { IStep } from '@automatischtest1/types';
 
 const joinBy = (delimiter = '.', ...args: string[]) =>
   args.filter(Boolean).join(delimiter);

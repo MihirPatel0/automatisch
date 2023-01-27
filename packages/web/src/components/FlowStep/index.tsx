@@ -20,7 +20,7 @@ import type {
   IAction,
   IStep,
   ISubstep,
-} from '@automatisch/types';
+} from '@automatischtest1/types';
 
 import { EditorContext } from 'contexts/Editor';
 import { StepExecutionsProvider } from 'contexts/StepExecutions';

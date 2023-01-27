@@ -1,4 +1,4 @@
-import { IJSONObject } from '@automatisch/types';
+import { IJSONObject } from '@automatischtest1/types';
 import Step from '../../models/step';
 import Context from '../../types/express/context';
 

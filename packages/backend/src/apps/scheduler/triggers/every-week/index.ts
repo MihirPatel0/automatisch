@@ -1,5 +1,5 @@
 import { DateTime } from 'luxon';
-import { IGlobalVariable } from '@automatisch/types';
+import { IGlobalVariable } from '@automatischtest1/types';
 import defineTrigger from '../../../../helpers/define-trigger';
 import cronTimes from '../../common/cron-times';
 import getNextCronDateTime from '../../common/get-next-cron-date-time';

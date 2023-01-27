@@ -1,4 +1,4 @@
-import { IJSONObject } from '@automatisch/types';
+import { IJSONObject } from '@automatischtest1/types';
 import BaseError from './base';
 
 export default class GenerateAuthUrlError extends BaseError {

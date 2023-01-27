@@ -5,7 +5,7 @@ import User from '../../src/models/user';
 import '../../src/config/orm';
 
 export async function createUser(
-  email = 'user@automatisch.io',
+  email = 'user@automatischtest1.io',
   password = 'sample'
 ) {
   const UNIQUE_VIOLATION_CODE = '23505';

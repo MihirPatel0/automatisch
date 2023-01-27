@@ -1,6 +1,6 @@
 import App from '../../models/app';
 import Context from '../../types/express/context';
-import { IApp, IConnection } from '@automatisch/types';
+import { IApp, IConnection } from '@automatischtest1/types';
 
 type Params = {
   name: string;

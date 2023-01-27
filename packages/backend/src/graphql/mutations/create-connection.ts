@@ -1,6 +1,6 @@
 import App from '../../models/app';
 import Context from '../../types/express/context';
-import { IJSONObject } from '@automatisch/types';
+import { IJSONObject } from '@automatischtest1/types';
 
 type Params = {
   input: {

@@ -1,4 +1,4 @@
-import { TBeforeRequest } from '@automatisch/types';
+import { TBeforeRequest } from '@automatischtest1/types';
 
 const addAuthHeader: TBeforeRequest = ($, requestConfig) => {
   const { tokenType, botToken } = $.auth.data;

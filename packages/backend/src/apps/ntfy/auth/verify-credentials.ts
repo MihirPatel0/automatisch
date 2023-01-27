@@ -1,11 +1,11 @@
-import { IGlobalVariable } from '@automatisch/types';
+import { IGlobalVariable } from '@automatischtest1/types';
 
 const verifyCredentials = async ($: IGlobalVariable) => {
   await $.http.post('/', { topic: 'automatisch' });
   let screenName = $.auth.data.serverUrl;
 
   if ($.auth.data.username) {
-    screenName = `${$.auth.data.username} @ ${screenName}`
+    screenName = `${$.auth.data.username} @ ${screenName}`;
   }
 
   await $.auth.set({

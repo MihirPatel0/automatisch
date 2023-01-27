@@ -1,4 +1,4 @@
-import { IField, IGlobalVariable } from '@automatisch/types';
+import { IField, IGlobalVariable } from '@automatischtest1/types';
 import qs from 'qs';
 
 const scopes = [

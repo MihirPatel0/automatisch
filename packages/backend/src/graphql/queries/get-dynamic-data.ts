@@ -1,4 +1,4 @@
-import { IDynamicData, IJSONObject } from '@automatisch/types';
+import { IDynamicData, IJSONObject } from '@automatischtest1/types';
 import Context from '../../types/express/context';
 import App from '../../models/app';
 import globalVariable from '../../helpers/global-variable';

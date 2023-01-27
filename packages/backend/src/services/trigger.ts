@@ -1,4 +1,4 @@
-import { IJSONObject, ITriggerItem } from '@automatisch/types';
+import { IJSONObject, ITriggerItem } from '@automatischtest1/types';
 import Step from '../models/step';
 import Flow from '../models/flow';
 import Execution from '../models/execution';

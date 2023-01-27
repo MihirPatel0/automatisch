@@ -6,7 +6,7 @@ import {
   IRawAction,
   IRawTrigger,
   ITrigger,
-} from '@automatisch/types';
+} from '@automatischtest1/types';
 import { omit, cloneDeep } from 'lodash';
 import addAuthenticationSteps from './add-authentication-steps';
 import addReconnectionSteps from './add-reconnection-steps';

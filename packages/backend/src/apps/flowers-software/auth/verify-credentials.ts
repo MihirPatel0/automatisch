@@ -1,4 +1,4 @@
-import { IGlobalVariable } from '@automatisch/types';
+import { IGlobalVariable } from '@automatischtest1/types';
 import getWebhooks from '../common/get-webhooks';
 
 const verifyCredentials = async ($: IGlobalVariable) => {

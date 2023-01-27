@@ -1,6 +1,6 @@
 import fs from 'fs';
 import { join } from 'path';
-import { IApp } from '@automatisch/types';
+import { IApp } from '@automatischtest1/types';
 import appInfoConverter from '../helpers/app-info-converter';
 import getApp from '../helpers/get-app';
 

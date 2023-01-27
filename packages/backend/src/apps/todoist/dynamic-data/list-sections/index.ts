@@ -1,4 +1,4 @@
-import { IGlobalVariable } from '@automatisch/types';
+import { IGlobalVariable } from '@automatischtest1/types';
 
 export default {
   name: 'List sections',
@@ -6,17 +6,19 @@ export default {
 
   async run($: IGlobalVariable) {
     const params = {
-      project_id: ($.step.parameters.projectId as string),
+      project_id: $.step.parameters.projectId as string,
     };
 
-    const response = await $.http.get('/sections', {params});
+    const response = await $.http.get('/sections', { params });
 
-    response.data = response.data.map((section: { id: string, name: string }) => {
-      return {
-        value: section.id,
-        name: section.name,
-      };
-    });
+    response.data = response.data.map(
+      (section: { id: string; name: string }) => {
+        return {
+          value: section.id,
+          name: section.name,
+        };
+      }
+    );
 
     return response;
   },

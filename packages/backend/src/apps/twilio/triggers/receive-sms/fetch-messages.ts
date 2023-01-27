@@ -1,4 +1,4 @@
-import { IGlobalVariable, IJSONObject } from '@automatisch/types';
+import { IGlobalVariable, IJSONObject } from '@automatischtest1/types';
 
 const fetchMessages = async ($: IGlobalVariable) => {
   const toNumber = $.step.parameters.toNumber as string;

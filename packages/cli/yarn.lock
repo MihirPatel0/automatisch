@@ -61,12 +61,12 @@
     tslib "^2.3.0"
     zen-observable-ts "^1.2.5"
 
-"@automatisch/backend@^0.1.0":
+"@automatischtest1/backend@^0.1.0":
   version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@automatisch/backend/-/backend-0.1.0.tgz#c652a2e1ff895d468fefc8ef290bdf5932424c34"
+  resolved "https://registry.yarnpkg.com/@automatischtest1/backend/-/backend-0.1.0.tgz#c652a2e1ff895d468fefc8ef290bdf5932424c34"
   integrity sha512-sOw9wz5s1HuLVTtk46OQDoF7GFgrwZlR44DHHUsDzzDE71jop8TG2Jx9HuWWOaTBFqezbHvA+980jV7Oq+m2LA==
   dependencies:
-    "@automatisch/web" "^0.1.0"
+    "@automatischtest1/web" "^0.1.0"
     "@bull-board/express" "^3.10.1"
     "@gitbeaker/node" "^35.6.0"
     "@graphql-tools/graphql-file-loader" "^7.3.4"
@@ -108,18 +108,18 @@
     twitter-api-v2 "1.6.0"
     winston "^3.7.1"
 
-"@automatisch/types@^0.1.0":
+"@automatischtest1/types@^0.1.0":
   version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@automatisch/types/-/types-0.1.0.tgz#aea0da9991ea79c59cf69f660425df8d6024feac"
+  resolved "https://registry.yarnpkg.com/@automatischtest1/types/-/types-0.1.0.tgz#aea0da9991ea79c59cf69f660425df8d6024feac"
   integrity sha512-By3aEiZUc94tAjvjxRB1L+obRsa8gqYoXkHi3Nub2WplLV4YDYnx1w35dPcBIplS6Mizl9zDFv5Gg0V+lm4LwA==
 
-"@automatisch/web@^0.1.0":
+"@automatischtest1/web@^0.1.0":
   version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@automatisch/web/-/web-0.1.0.tgz#f4b0857606dfb40788f35d93f6687f59a9d6eccf"
+  resolved "https://registry.yarnpkg.com/@automatischtest1/web/-/web-0.1.0.tgz#f4b0857606dfb40788f35d93f6687f59a9d6eccf"
   integrity sha512-tRV8YllHlkDOefoeP73lX9AxZu1O6ez0T6IrvZcUG19IUKUycL+ZuU0kM/Snpmupx2R+AhBVVr1O5kPPZHCXzA==
   dependencies:
     "@apollo/client" "^3.6.9"
-    "@automatisch/types" "^0.1.0"
+    "@automatischtest1/types" "^0.1.0"
     "@emotion/react" "^11.4.1"
     "@emotion/styled" "^11.3.0"
     "@hookform/resolvers" "^2.8.8"

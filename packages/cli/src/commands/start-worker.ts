@@ -38,7 +38,7 @@ export default class StartWorker extends Command {
   }
 
   async runWorker(): Promise<void> {
-    await import('@automatisch/backend/worker');
+    await import('@automatischtest1/backend/worker');
   }
 
   async run(): Promise<void> {

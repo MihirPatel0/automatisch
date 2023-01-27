@@ -1,5 +1,5 @@
 import { DateTime } from 'luxon';
-import { IJSONObject } from '@automatisch/types';
+import { IJSONObject } from '@automatischtest1/types';
 
 export default function getDateTimeObjectRepresentation(dateTime: DateTime) {
   const defaults = dateTime.toObject();

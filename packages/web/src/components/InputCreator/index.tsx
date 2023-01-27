@@ -1,6 +1,6 @@
 import * as React from 'react';
 import MuiTextField from '@mui/material/TextField';
-import type { IField, IFieldDropdownOption } from '@automatisch/types';
+import type { IField, IFieldDropdownOption } from '@automatischtest1/types';
 
 import useDynamicData from 'hooks/useDynamicData';
 import PowerInput from 'components/PowerInput';

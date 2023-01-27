@@ -1,4 +1,4 @@
-import { IGlobalVariable, IField } from '@automatisch/types';
+import { IGlobalVariable, IField } from '@automatischtest1/types';
 import { URLSearchParams } from 'url';
 import scopes from '../common/scopes';
 import getCurrentUser from '../common/get-current-user';

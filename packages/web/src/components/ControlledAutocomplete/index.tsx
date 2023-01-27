@@ -3,7 +3,7 @@ import { Controller, useFormContext } from 'react-hook-form';
 import FormHelperText from '@mui/material/FormHelperText';
 import Autocomplete, { AutocompleteProps } from '@mui/material/Autocomplete';
 import Typography from '@mui/material/Typography';
-import type { IFieldDropdownOption } from '@automatisch/types';
+import type { IFieldDropdownOption } from '@automatischtest1/types';
 
 interface ControlledAutocompleteProps
   extends AutocompleteProps<IFieldDropdownOption, boolean, boolean, boolean> {

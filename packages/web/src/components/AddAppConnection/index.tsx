@@ -6,7 +6,7 @@ import DialogContentText from '@mui/material/DialogContentText';
 import Dialog from '@mui/material/Dialog';
 import LoadingButton from '@mui/lab/LoadingButton';
 import { FieldValues, SubmitHandler } from 'react-hook-form';
-import type { IApp, IJSONObject, IField } from '@automatisch/types';
+import type { IApp, IJSONObject, IField } from '@automatischtest1/types';
 
 import useFormatMessage from 'hooks/useFormatMessage';
 import computeAuthStepVariables from 'helpers/computeAuthStepVariables';
