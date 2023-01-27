@@ -49,17 +49,15 @@
         "test": "react-scripts test",
         "eject": "react-scripts eject",
         "lint": "eslint . --ignore-path ../../.eslintignore",
-        "prepack": "REACT_APP_GRAPHQL_URL=/graphql yarn build"
+        "prepack": "yarn build"
     },
     "files": [
         "/build"
     ],
-    "contributors": [
-        {
-            "name": "automatisch contributors",
-            "url": "https://github.com/MihirPatel0/automatisch/graphs/contributors"
-        }
-    ],
+    "contributors": [{
+        "name": "automatisch contributors",
+        "url": "https://github.com/MihirPatel0/automatisch/graphs/contributors"
+    }],
     "bugs": {
         "url": "https://github.com/MihirPatel0/automatisch/issues"
     },
@@ -82,5 +80,5 @@
     "publishConfig": {
         "access": "public"
     },
-    "gitHead": "d7c15a183bfa6241463061c643edfe4995186667"
+    "gitHead": "ef306c68b7c13cc539a3b5029f4f0c272432de7c"
 }
