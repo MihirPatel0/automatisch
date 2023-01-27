@@ -3,6 +3,7 @@
 FROM node:16 as base
 WORKDIR /app
 COPY ./package.json ./
+COPY ./yarn.lock ./
 RUN yarn install
 COPY ./lerna.json ./
 COPY ./.yarnrc ./
@@ -49,6 +50,7 @@ WORKDIR /app/packages/web
 # Here the dependencies will be installed and the local required packages bootstrapped.
 # The --slim flag will cause the package json to only include the dependencies, so not all changes to the package json cause docker to reinstall all packages.
 COPY  packages/web/package-slim.json package.json
+COPY packages/web/yarn.lock yarn.lock
 WORKDIR /app/
 COPY --from=automatisch_types-build /app/packages/types/package.json /app/packages/types/
 RUN npx lerna bootstrap --scope=@automatisch/web --includeDependencies
@@ -81,6 +83,7 @@ WORKDIR /app/packages/cli
 # Here the dependencies will be installed and the local required packages bootstrapped.
 # The --slim flag will cause the package json to only include the dependencies, so not all changes to the package json cause docker to reinstall all packages.
 COPY  packages/cli/package-slim.json package.json
+COPY packages/web/yarn.lock yarn.lock
 WORKDIR /app/
 COPY --from=automatisch_backend-build /app/packages/backend/package.json /app/packages/backend/
 COPY --from=automatisch_types-build /app/packages/types/package.json /app/packages/types/
