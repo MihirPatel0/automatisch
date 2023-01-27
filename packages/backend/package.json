@@ -1,6 +1,6 @@
 {
     "name": "@automatischtest1/backend",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "license": "AGPL-3.0",
     "description": "The open source Zapier alternative. Build workflow automation without spending time and money.",
     "scripts": {
@@ -22,7 +22,7 @@
         "prebuild": "rm -rf ./dist"
     },
     "dependencies": {
-        "@automatischtest1/web": "^0.1.1",
+        "@automatischtest1/web": "^0.1.2",
         "@bull-board/express": "^3.10.1",
         "@graphql-tools/graphql-file-loader": "^7.3.4",
         "@graphql-tools/load": "^7.5.2",
