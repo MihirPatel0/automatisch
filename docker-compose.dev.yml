@@ -1,0 +1,55 @@
+# docker-compose -f docker-compose.dev.yml up --build
+version: '3.9'
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '3001:3001'
+      - '3000:3000'
+    environment:
+      - NODE_ENV=development
+      - HOST=localhost
+      - PROTOCOL=http
+      - BACKEND_PORT=3000
+      - WEB_APP_URL=http://localhost:3001
+      - WEBHOOK_URL=http://localhost:3000
+      - APP_ENV=development
+      - POSTGRES_DATABASE=dbname
+      - POSTGRES_PORT=5432
+      - POSTGRES_HOST=postgres
+      - POSTGRES_USERNAME=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_ENABLE_SSL=false
+      - ENCRYPTION_KEY=RaTTwYL4XuK87VGKzB+ZTUCc9+V0I/A+iXYsi4HQaW32QOjs
+      - WEBHOOK_SECRET_KEY=RaTTwYL4XuK87VGKzB+ZTUCc9+V0I/A+iXYsi4HQaW32QOjs
+      - APP_SECRET_KEY=RaTTwYL4XuK87VGKzB+ZTUCc9+V0I/A+iXYsi4HQaW32QOjs
+      - REDIS_PORT=6379
+      - REDIS_HOST=redis
+      - REDIS_TLS=true
+      - ENABLE_BULLMQ_DASHBOARD=false
+      - SERVE_WEB_APP_SEPARATELY=true
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_started
+  postgres:
+    image: postgres:14.5
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=dbname
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}']
+      interval: 10s
+      timeout: 5s
+      retries: 5
+  redis:
+    image: 'redis:7.0.4'
+    volumes:
+      - redis_data:/data
+volumes:
+  postgres_data:
+  redis_data:
