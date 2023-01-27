@@ -1,13 +1,11 @@
 {
-  "packages": [
-    "packages/*"
-  ],
-  "version": "0.4.0",
-  "npmClient": "yarn",
-  "useWorkspaces": true,
-  "command": {
-    "add": {
-      "exact": true
+    "packages": ["packages/*"],
+    "version": "0.1.0",
+    "npmClient": "yarn",
+    "useWorkspaces": true,
+    "command": {
+        "add": {
+            "exact": true
+        }
     }
-  }
 }

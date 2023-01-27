@@ -1,6 +1,6 @@
 {
     "name": "@automatischtest1/cli",
-    "version": "0.4.0",
+    "version": "0.1.0",
     "license": "AGPL-3.0",
     "description": "The open source Zapier alternative. Build workflow automation without spending time and money.",
     "contributors": [{
@@ -31,7 +31,7 @@
         "version": "oclif readme && git add README.md"
     },
     "dependencies": {
-        "@automatischtest1/backend": "^0.4.0",
+        "@automatischtest1/backend": "^0.1.0",
         "@oclif/core": "^1",
         "@oclif/plugin-help": "^5",
         "@oclif/plugin-plugins": "^2.0.1",
