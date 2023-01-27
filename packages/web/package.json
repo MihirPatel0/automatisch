@@ -54,18 +54,16 @@
     "files": [
         "/build"
     ],
-    "contributors": [
-        {
-            "name": "automatisch contributors",
-            "url": "https://github.com/automatisch/automatisch/graphs/contributors"
-        }
-    ],
+    "contributors": [{
+        "name": "automatisch contributors",
+        "url": "https://github.com/MihirPatel0/automatisch/graphs/contributors"
+    }],
     "bugs": {
-        "url": "https://github.com/automatisch/automatisch/issues"
+        "url": "https://github.com/MihirPatel0/automatisch/issues"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/automatisch/automatisch.git"
+        "url": "git+https://github.com/MihirPatel0/automatisch.git"
     },
     "browserslist": {
         "production": [
@@ -81,5 +79,6 @@
     },
     "publishConfig": {
         "access": "public"
-    }
+    },
+    "gitHead": "d7c15a183bfa6241463061c643edfe4995186667"
 }

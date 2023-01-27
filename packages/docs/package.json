@@ -14,18 +14,16 @@
         "vitepress": "^1.0.0-alpha.21",
         "vue": "^3.2.37"
     },
-    "contributors": [
-        {
-            "name": "automatisch contributors",
-            "url": "https://github.com/automatisch/automatisch/graphs/contributors"
-        }
-    ],
-    "homepage": "https://github.com/automatisch/automatisch#readme",
+    "contributors": [{
+        "name": "automatisch contributors",
+        "url": "https://github.com/MihirPatel0/automatisch/graphs/contributors"
+    }],
+    "homepage": "https://github.com/MihirPatel0/automatisch#readme",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/automatisch/automatisch.git"
+        "url": "git+https://github.com/MihirPatel0/automatisch.git"
     },
     "bugs": {
-        "url": "https://github.com/automatisch/automatisch/issues"
+        "url": "https://github.com/MihirPatel0/automatisch/issues"
     }
 }

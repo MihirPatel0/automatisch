@@ -7,19 +7,17 @@
     "scripts": {
         "open": "cypress open"
     },
-    "contributors": [
-        {
-            "name": "automatisch contributors",
-            "url": "https://github.com/automatisch/automatisch/graphs/contributors"
-        }
-    ],
-    "homepage": "https://github.com/automatisch/automatisch#readme",
+    "contributors": [{
+        "name": "automatisch contributors",
+        "url": "https://github.com/MihirPatel0/automatisch/graphs/contributors"
+    }],
+    "homepage": "https://github.com/MihirPatel0/automatisch#readme",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/automatisch/automatisch.git"
+        "url": "git+https://github.com/MihirPatel0/automatisch.git"
     },
     "bugs": {
-        "url": "https://github.com/automatisch/automatisch/issues"
+        "url": "https://github.com/MihirPatel0/automatisch/issues"
     },
     "devDependencies": {
         "cypress": "^10.9.0"

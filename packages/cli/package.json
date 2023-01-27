@@ -3,13 +3,11 @@
     "version": "0.1.2",
     "license": "AGPL-3.0",
     "description": "The open source Zapier alternative. Build workflow automation without spending time and money.",
-    "contributors": [
-        {
-            "name": "automatisch contributors",
-            "url": "https://github.com/automatisch/automatisch/graphs/contributors"
-        }
-    ],
-    "homepage": "https://github.com/automatisch/automatisch#readme",
+    "contributors": [{
+        "name": "automatisch contributors",
+        "url": "https://github.com/MihirPatel0/automatisch/graphs/contributors"
+    }],
+    "homepage": "https://github.com/MihirPatel0/automatisch#readme",
     "main": "dist/index.js",
     "bin": {
         "automatisch": "./bin/automatisch"
@@ -21,7 +19,7 @@
     ],
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/automatisch/automatisch.git"
+        "url": "git+https://github.com/MihirPatel0/automatisch.git"
     },
     "scripts": {
         "build": "shx rm -rf dist && tsc -b",
@@ -64,10 +62,11 @@
         "node": ">=12.0.0"
     },
     "bugs": {
-        "url": "https://github.com/automatisch/automatisch/issues"
+        "url": "https://github.com/MihirPatel0/automatisch/issues"
     },
     "types": "dist/index.d.ts",
     "publishConfig": {
         "access": "public"
-    }
+    },
+    "gitHead": "d7c15a183bfa6241463061c643edfe4995186667"
 }

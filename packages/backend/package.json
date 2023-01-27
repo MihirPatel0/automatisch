@@ -58,13 +58,11 @@
         "pg": "^8.7.1",
         "winston": "^3.7.1"
     },
-    "contributors": [
-        {
-            "name": "automatisch contributors",
-            "url": "https://github.com/automatisch/automatisch/graphs/contributors"
-        }
-    ],
-    "homepage": "https://github.com/automatisch/automatisch#readme",
+    "contributors": [{
+        "name": "automatisch contributors",
+        "url": "https://github.com/MihirPatel0/automatisch/graphs/contributors"
+    }],
+    "homepage": "https://github.com/MihirPatel0/automatisch#readme",
     "main": "dist/src/app",
     "directories": {
         "bin": "bin",
@@ -88,10 +86,10 @@
     ],
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/automatisch/automatisch.git"
+        "url": "git+https://github.com/MihirPatel0/automatisch.git"
     },
     "bugs": {
-        "url": "https://github.com/automatisch/automatisch/issues"
+        "url": "https://github.com/MihirPatel0/automatisch/issues"
     },
     "devDependencies": {
         "@automatischtest1/types": "^0.4.0",
@@ -128,5 +126,6 @@
     },
     "publishConfig": {
         "access": "public"
-    }
+    },
+    "gitHead": "d7c15a183bfa6241463061c643edfe4995186667"
 }
