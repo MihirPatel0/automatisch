@@ -1,16 +1,18 @@
 {
     "name": "@automatischtest1/e2e-tests",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "license": "AGPL-3.0",
     "private": true,
     "description": "The open source Zapier alternative. Build workflow automation without spending time and money.",
     "scripts": {
         "open": "cypress open"
     },
-    "contributors": [{
-        "name": "automatisch contributors",
-        "url": "https://github.com/automatisch/automatisch/graphs/contributors"
-    }],
+    "contributors": [
+        {
+            "name": "automatisch contributors",
+            "url": "https://github.com/automatisch/automatisch/graphs/contributors"
+        }
+    ],
     "homepage": "https://github.com/automatisch/automatisch#readme",
     "repository": {
         "type": "git",

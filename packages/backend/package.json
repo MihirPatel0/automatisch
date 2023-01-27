@@ -1,6 +1,6 @@
 {
     "name": "@automatischtest1/backend",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "license": "AGPL-3.0",
     "description": "The open source Zapier alternative. Build workflow automation without spending time and money.",
     "scripts": {
@@ -22,7 +22,7 @@
         "prebuild": "rm -rf ./dist"
     },
     "dependencies": {
-        "@automatischtest1/web": "^0.1.0",
+        "@automatischtest1/web": "^0.1.1",
         "@bull-board/express": "^3.10.1",
         "@graphql-tools/graphql-file-loader": "^7.3.4",
         "@graphql-tools/load": "^7.5.2",
@@ -58,10 +58,12 @@
         "pg": "^8.7.1",
         "winston": "^3.7.1"
     },
-    "contributors": [{
-        "name": "automatisch contributors",
-        "url": "https://github.com/automatisch/automatisch/graphs/contributors"
-    }],
+    "contributors": [
+        {
+            "name": "automatisch contributors",
+            "url": "https://github.com/automatisch/automatisch/graphs/contributors"
+        }
+    ],
     "homepage": "https://github.com/automatisch/automatisch#readme",
     "main": "dist/src/app",
     "directories": {
