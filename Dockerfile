@@ -2,8 +2,9 @@
 # Make sure to include the base setup for lerna here.
 FROM node:16 as base
 WORKDIR /app
+RUN apk update && apk add yarn
 COPY ./package.json ./
-RUN npm install
+RUN yarn install
 COPY ./lerna.json ./
 # Package @automatisch/docs
 FROM base as automatisch_docs-build
@@ -17,7 +18,7 @@ WORKDIR /app/packages/docs
 # The normal package.json should be copied after the install into the container
 COPY  packages/docs/package.json ./
 # This will only add the command to the dockerfile if the build script exists in the package otherwise its ignored.
-RUN npm run build
+RUN yarn run build
 # Package @automatisch/e2e-tests
 FROM base as automatisch_e2e-tests-build
 WORKDIR /app/packages/e2e-tests
@@ -56,7 +57,7 @@ WORKDIR /app/packages/web
 # The normal package.json should be copied after the install into the container
 COPY  packages/web/package.json ./
 # This will only add the command to the dockerfile if the build script exists in the package otherwise its ignored.
-RUN npm run build
+RUN yarn run build
 # Package @automatisch/backend
 FROM base as automatisch_backend-build
 WORKDIR /app/packages/backend
@@ -73,7 +74,7 @@ WORKDIR /app/packages/backend
 # The normal package.json should be copied after the install into the container
 COPY  packages/backend/package.json ./
 # This will only add the command to the dockerfile if the build script exists in the package otherwise its ignored.
-RUN npm run build
+RUN yarn run build
 # Package @automatisch/cli
 FROM base as automatisch_cli-build
 WORKDIR /app/packages/cli
@@ -92,7 +93,7 @@ WORKDIR /app/packages/cli
 # The normal package.json should be copied after the install into the container
 COPY  packages/cli/package.json ./
 # This will only add the command to the dockerfile if the build script exists in the package otherwise its ignored.
-RUN npm run build
+RUN yarn run build
 # final stage
 FROM base
 COPY --from=automatisch_docs-build /app/packages/docs /app/packages/docs
