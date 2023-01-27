@@ -5,6 +5,7 @@ WORKDIR /app
 COPY ./package.json ./
 RUN yarn install
 COPY ./lerna.json ./
+COPY ./.yarnrc ./
 # Package @automatisch/docs
 FROM base as automatisch_docs-build
 WORKDIR /app/packages/docs
