@@ -9,5 +9,9 @@
     "add": {
       "exact": true
     }
+  },
+  "lerna-dockerize": {
+    "templateDockerfileName": "Dockerfile.template",
+    "baseDockerfileName": "Dockerfile.base"
   }
 }

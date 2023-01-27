@@ -8,7 +8,8 @@
     "start:backend": "lerna run --stream --scope=@*/backend dev",
     "lint": "lerna run --no-bail --stream --parallel --scope=@*/{web,backend,cli} lint",
     "build:watch": "lerna run --no-bail --stream --parallel --scope=@*/{web,backend,cli} build:watch",
-    "build:docs": "cd ./packages/docs && yarn install && yarn build"
+    "build:docs": "cd ./packages/docs && yarn install && yarn build",
+    "lerna-dockerize": "lerna-dockerize"
   },
   "workspaces": {
     "packages": [
@@ -33,5 +34,8 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "lerna-dockerize": "^1.0.4"
   }
 }

@@ -1,0 +1,7 @@
+{
+    "name": "@automatisch/e2e-tests",
+    "version": "0.4.0",
+    "devDependencies": {
+        "cypress": "^10.9.0"
+    }
+}
