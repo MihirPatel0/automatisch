@@ -3,7 +3,7 @@
     "license": "AGPL-3.0",
     "private": true,
     "scripts": {
-        "publish": "lerna publish",
+        "publish": "lerna publish --no-private",
         "start": "lerna run --stream --parallel --scope=@*/{web,backend} dev",
         "start:web": "lerna run --stream --scope=@*/web dev",
         "start:backend": "lerna run --stream --scope=@*/backend dev",
