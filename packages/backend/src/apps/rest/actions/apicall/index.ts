@@ -1,7 +1,8 @@
-import { IJSONObject } from '@automatisch/types';
+import { IJSONObject, IJSONValue } from '@automatisch/types';
 import { AxiosRequestConfig } from 'axios';
 import logger from '../../../../helpers/logger';
 import defineAction from '../../../../helpers/define-action';
+import { URLSearchParams } from 'url';
 
 export default defineAction({
   name: 'Call an api',
@@ -28,45 +29,54 @@ export default defineAction({
     try {
       const config: AxiosRequestConfig = {};
       console.log('PARSE', headers as string);
-      const parsedHeaders = headers ?? JSON.parse(headers as string);
       console.log('PARSE', body as string);
-      const parsedBody = body ?? JSON.parse(body as string);
-      config.headers = parsedHeaders;
-      config.data = parsedBody;
+      if (headers) {
+        config.headers = JSON.parse(headers as string);
+      }
       if (method === 'GET') {
+        if (body) {
+          config.params = new URLSearchParams(JSON.parse(body as string));
+        }
+        logger.info(JSON.stringify({ url, config }));
         const result = await $.http.get(url as string, config);
         info = {
-          data: result.data,
-          status: result.status,
-          headers: result.headers,
-          statusText: result.statusText,
+          data: result?.data,
+          status: result?.status,
+          headers: result?.headers,
+          statusText: result?.statusText,
         };
-      }
-      if (method === 'POST') {
-        const result = await $.http.post(url as string, { config });
+      } else if (method === 'POST') {
+        config.data = JSON.parse(body as string);
         logger.info(JSON.stringify({ url, config }));
+        const result = await $.http.post(url as string, { config });
         info = {
-          data: result.data,
-          status: result.status,
-          headers: result.headers,
-          statusText: result.statusText,
+          data: result?.data,
+          status: result?.status,
+          headers: result?.headers,
+          statusText: result?.statusText,
         };
+      } else {
+        throw new Error('Invalid request method.');
       }
+      $.setActionItem({ raw: info as IJSONObject });
     } catch (e) {
-      info = { error: e.message ?? 'Something went wrong please check log for more info.' };
+      info = {
+        error:
+          e.message ?? 'Something went wrong please check log for more info.',
+      };
+      logger.error(e);
       logger.error(
         'EXECUTION ERROR REST FOR: ' +
           JSON.stringify({
             app: $.app,
             step: $.step,
-            error: e,
             body,
             headers,
             method,
             url,
           })
       );
+      $.setActionItem({ raw: info });
     }
-    $.setActionItem({ raw: info as IJSONObject });
   },
 });
