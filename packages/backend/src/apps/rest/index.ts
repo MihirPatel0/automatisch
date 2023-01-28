@@ -5,7 +5,7 @@ import actions from './actions';
 export default defineApp({
   name: 'REST',
   key: 'rest',
-  iconUrl: '{BASE_URL}/apps/smtp/assets/favicon.svg',
+  iconUrl: '{BASE_URL}/apps/rest/assets/favicon.svg',
   authDocUrl: 'https://automatisch.io/docs/apps/rest/connection',
   supportsConnections: true,
   baseUrl: '',
