@@ -46,9 +46,12 @@ export default defineAction({
           statusText: result?.statusText,
         };
       } else if (method === 'POST') {
-        config.data = JSON.parse(body as string);
         logger.info(JSON.stringify({ url, config }));
-        const result = await $.http.post(url as string, { config });
+        const result = await $.http.post(
+          url as string,
+          JSON.parse(body as string),
+          config
+        );
         info = {
           data: result?.data,
           status: result?.status,
