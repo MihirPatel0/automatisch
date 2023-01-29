@@ -39,22 +39,25 @@ const port = process.env.PORT || '3000';
 const serveWebAppSeparately =
   process.env.SERVE_WEB_APP_SEPARATELY === 'true' ? true : false;
 
-let apiUrl = (new URL(`${protocol}://${host}:${port}`)).toString();
+let apiUrl = new URL(`${protocol}://${host}:${port}`).toString();
 apiUrl = apiUrl.substring(0, apiUrl.length - 1);
-
+// for assets path need to update later
+if (host !== 'localhost' && process.env.WEB_APP_URL) {
+  apiUrl = process.env.WEB_APP_URL;
+}
 // use apiUrl by default, which has less priority over the following cases
 let webAppUrl = apiUrl;
 
 if (process.env.WEB_APP_URL) {
   // use env. var. if provided
-  webAppUrl = (new URL(process.env.WEB_APP_URL)).toString();
+  webAppUrl = new URL(process.env.WEB_APP_URL).toString();
   webAppUrl = webAppUrl.substring(0, webAppUrl.length - 1);
 } else if (serveWebAppSeparately) {
   // no env. var. and serving separately, sign of development
-  webAppUrl = 'http://localhost:3001'
+  webAppUrl = 'http://localhost:3001';
 }
 
-let webhookUrl = (new URL(process.env.WEBHOOK_URL || apiUrl)).toString();
+let webhookUrl = new URL(process.env.WEBHOOK_URL || apiUrl).toString();
 webhookUrl = webhookUrl.substring(0, webhookUrl.length - 1);
 
 const appEnv = process.env.APP_ENV || 'development';
