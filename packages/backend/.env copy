@@ -1,8 +1,8 @@
-HOST=localhost
+ST=digitaljeel.com
 PROTOCOL=http
-BACKEND_PORT=3000
-WEB_APP_URL=http://localhost:3001
-WEBHOOK_URL=http://localhost:3000
+BACKEND_PORT:80
+WEB_APP_URL=https://digitaljeel.com
+WEBHOOK_URL=http://digitaljeel.com
 APP_ENV=development
 POSTGRES_DATABASE=dbname
 POSTGRES_PORT=5432
@@ -17,5 +17,5 @@ REDIS_PORT=6379
 REDIS_HOST=localhost
 REDIS_TLS=true
 ENABLE_BULLMQ_DASHBOARD=false
-SERVE_WEB_APP_SEPARATELY=true
+SERVE_WEB_APP_SEPARATELY=false
 TELEMETRY_ENABLED=false
